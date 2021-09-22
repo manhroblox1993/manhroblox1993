@@ -1,13 +1,5 @@
--- change the "Temple" to any NPC you want (autofarm)
-
-while wait(0.01) do
-
 local args = {
-    [1] = workspace.NPCFolder.Kaidou.Humanoid, -- Doflamingo, Teach, Crocodile, Grimmjow, Szayelaporro, Medazeppi, Yahaba, Kaidou, Susamaru, Ulquiorra Cifer, Sakazuki, Sōsuke (no idea if this one works), Temple, Akaza
-    [2] = workspace.NPCFolder.Kaidou, -- Doflamingo, Teach, Crocodile, Grimmjow, Szayelaporro, Medazeppi, Yahaba, Kaidou, Susamaru, Ulquiorra Cifer, Sakazuki, Sōsuke (no idea if this one works), Temple, Akaza
-    [3] = 2
+   [1] = 3006
 }
 
-game:GetService("ReplicatedStorage").RemoteEvent.SwordHit:FireServer(unpack(args))
-
-end
+game:GetService("ReplicatedStorage").PetEvents.StartSwordEvent:FireServer(unpack(args))
