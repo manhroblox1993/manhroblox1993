@@ -1,0 +1,6 @@
+local args = {
+   [1] = "Gems",
+   [2] = game:GetService("ReplicatedStorage").Resources.Environments.heroIsland.LootBoxStoreGem
+}
+
+game:GetService("ReplicatedStorage").NetManagedInstances.openShopLootBox:InvokeServer(unpack(args))
